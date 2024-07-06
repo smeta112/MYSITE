@@ -1,0 +1,199 @@
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-bg {
+
+  background-image: url("../img/blurred-shiny-pink-background.avif");
+  background-size: cover;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.full-screen {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.full-screen__body {
+	position: relative;
+	z-index: 2;
+	padding: 50px 15px;
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+}
+.full-screen__title {
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+}
+.full-screen__text {
+	font-size: 2em;
+	letter-spacing: 0.2em;
+}
+.full-screen__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.color-grey {
+  color: #3d3c3c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.cv-header,
+.profile,
+.experience,
+.company-name {
+  ont-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cv {
+  border: 1px solid #520b3c;
+  box-shadow: 1px 1px 10px #690b3f;
+}
+
+.cv-left {
+  background-color: #ec82a2;
+  min-height: 30vh;
+  color: #4e1515;
+}
+
+.cv-left a {
+  color: #4e1515;
+}
+
+.cv-left a:hover {
+  text-decoration: none;
+}
+
+.cv-left ul {
+  line-height: 175%;
+  padding-left: 30px;
+}
+
+.cv-left ul.contacts-block {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-left .address {
+  font-style: italic;
+}
+
+
+.cv-right {
+  background-color: #fff783;
+  min-height: 30vh;
+  color: #4b4a4a;
+}
+
+article {
+  padding: 20px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.company-name i {
+  font-size: 0.8rem;
+  font-family: Aria, sans-serif;
+  text-transform: none;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.lines {
+  overflow: hidden;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background-color: #f5499fc4;
+  border: 1px solid #e5d884;
+  vertical-align: middle;
+}
+
+.lines::before {
+  margin-left: -100%;
+}
+
+.lines::after {
+  margin-right: -100%;
+}
+
+@media (max-width: 991.98px) {
+  .cv-left h1,
+  .cv-left h2,
+  .cv-left h3,
+  .cv-left h4 {
+    font-size: 1.3rem;
+  }
+  .cv-left ul {
+    line-height: 150%;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  .cv {
+    margin-top: 0;
+  }
+
+  .photo-block img {
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+}
